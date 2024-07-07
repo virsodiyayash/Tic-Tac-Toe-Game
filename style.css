@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.game {
+    height: 60vmin;
+    width: 75vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    font-size: 8vmin;
+    background-color: white;
+    color: #212529;
+}
+
+input{
+    padding : 5px;
+}
+
+#reset_btn,
+#new_btn,
+#continue_btn,
+.startGameBtn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#reset_btn:hover, #new_btn:hover, #continue_btn:hover, .startGameBtn:hover {
+    background-color: #0056b3;
+}
+
+
+.startGameBtn {
+    margin-top: 20px;
+}
+
+h1{
+    margin-bottom: 1.5vh;
+}
+
+.playerForm{
+    margin-bottom: 2vh;
+}
+
+#currentTurn{
+    margin-top: 1.5vh;
+}
+
+.hide {
+    display: none;
+}
+
+.playerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.playerName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player1 {
+    margin-right: 30px;
+}
+
+.player3 {
+    margin-left: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+#score1,
+#score2 {
+    font-size: 24px;
+    color: #212529;
+}
+
+#msg{
+    font-size: 7vh;
+    color: #28A745;
+}
+
+label{
+    font-size: 20px;
+    margin: 2vh;
+    color: #212529;
+}
+
+input {
+    line-height: 24px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#errorMsg {
+    color: red;
+    font-size: 20px;
+}
+
+@media (max-width: 760px) {
+    .main_container{
+        height: calc(100vh - 100px);
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .main_container{
+        height: 80vh;
+    }
+    .container {
+        height: 70vmin;
+    }
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+    }
+    #msg {
+        margin-top: 20px;
+        font-size: 8vmin;
+    }
+    .playerName{
+        margin-top: 4vh;
+    }
+}
+

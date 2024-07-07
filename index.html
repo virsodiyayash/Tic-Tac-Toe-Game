@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <main>
+        <div class="main_container">
+        <h1 class="heading">Tic Tac Toe</h1>
+
+        <div class="playerForm">
+            <label for="player1Name" class="player1Name">Player 1 Name:</label>
+            <input type="text" id="player1Name" value="player1">
+            <label for="player2Name" class="player1Name">Player 2 Name:</label>
+            <input type="text" id="player2Name" value="player2">
+            <button class="startGameBtn" onclick="remove()">Start Game</button>
+        </div>
+        
+        <div class="playerName hide">
+            <div class="player1">
+                <h2 id="player1" class="player1Before player1After"></h2>
+                <p id="score1" class="hide">Score: 0</p>
+            </div>
+           <div class="player2">
+                <h2 id="player2"></h2>
+                <p id="score2" class="hide">Score: 0</p>
+           </div> 
+        </div>
+        <h2 id="currentTurn" class="hide"></h2>
+
+        <div class="msg_container hide">
+            <p id="msg">Winner</p>
+        </div>
+
+        <div class="container hide">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+
+
+        <button id="reset_btn" class="hide">Reset Game</button>
+
+        <div class="other_buttons">
+            <button id="new_btn" class="hide">New Game</button>
+            <button id="continue_btn" class="hide">Continue</button>
+        </div>
+       
+    </main>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
